@@ -21,14 +21,14 @@ export class HelloWorld extends LitElement {
 
   static get properties() {
     return {
-      title: { type: String }, //why is title not being returned
+      prompt: { type: String }, //why is title not being returned
       counter: { type: Number },
     };
   }
 
   constructor() {
     super();
-    this.title = 'Hey Nikita'; //why do i see Hello World instead of Hey Nikita?
+    this.prompt = 'Hey Nikita'; //why do i see Hello World instead of Hey Nikita?
     this.counter = 5;
     // this.greeting = 'Hello';
     // this.planet = 'World';
@@ -37,11 +37,17 @@ export class HelloWorld extends LitElement {
   __increment() {
     this.counter += 2; //changed counter to 2 from 1
   }
+__decrement() {
+    this.counter += -2; //changed counter to 2 from 1
+  }
 
   render() {
     return html`
-      <h2>${this.title} Nr. ${this.counter}!</h2> 
+      <h2>${this.prompt} number= ${this.counter}!</h2> 
       <button @click=${this.__increment}>increment</button>
+      <br>
+      <br>
+      <button @click=${this.__decrement}>decrement</button>
       <!-- <span @click=${this.togglePlanet}
         >${this.greeting}
         <span class="planet">${this.planet}</span>
