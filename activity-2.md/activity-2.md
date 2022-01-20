@@ -1,0 +1,8 @@
+/* Q1 What do you think each section does here? What commands can you run?
+A1: DevDependencies contain package name and version used during development. Dependencies contains the lit version. I think I can run all the commands under devdependency and dependency in package.json (I'm not quit sure though)
+Q2 The "demo" for your hello-world element is found in index.html. Reading this code, what does it do and how does it work? What HTML is making your script load to show a demo? How is this file rendering HTML via JavaScript?
+ A2: I think it shows the background and the text 'hello world'. The <div id="demo"></div> makes it a demo. The file is HTML because the doctype is html but it imports the hello-world.js
+ Q3 The Definition of your element is in your-element-name.js, while the class JS object is found in src/YourElementName.js. Why do you think they put these in two separate files? What do you think each code block is doing in the class'ed object? Leaving comments either in the source via // or in your
+ A3: I'm not quite sure, but I guess it's easier for people to view and edit since they are seperate. Has comments for each code block.
+ Q4: Try to explain what Lit is providing to the repo. What's so special about what Lit is providing that I'd be so bold to say it changes how the web is developed, forever? After anwering these questions to the best of your abilities...
+ A4: Based on my research, every lit component is a web component that works anywhere when using html. It seems like lit is simple and easy for using, but I didn't quite figure out how to use it yet...*/
